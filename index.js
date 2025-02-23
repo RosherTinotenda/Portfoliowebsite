@@ -27,29 +27,15 @@ window.addEventListener('scroll', () => {
    const navBarSlide=document.querySelector('#navBar');
  
    navOptions.addEventListener("click",function(){
-     
-   if(navBar.style.display==='none')
-   {
+     navBarSlide.classList.toggle('show-navBar')
+   
      //open navBar
-     navBar.style.display='block';
-     navLines.style.display="none";
-     navX.style.display="block";
-     //animate navBar sliding
-     navBar.classList.toggle('opened')
-
-   }
-   else{
-     //close navBar
-     navBar.style.display='none';
-     navLines.style.display="block";
-     navX.style.display="none";
-     navBar.classList.toggle('closed')
-     //animate navBar sliding
- 
-
      
-   }
-   navBar.style.display==='block'?navOptions.style.backgroundColor="#4B8DEB":navOptions.style.backgroundColor="#3949F9"
+     
+     //animate navBar sliding
+     
+     
+
    
    
  })
@@ -160,7 +146,7 @@ progressBar.forEach((counter) => {
 });
 //scroll to home page on nav click
 document.querySelector('#home').addEventListener('click',function(){
-  navBar.style.display = 'none';
+  navBarSlide.classList.toggle('show-navBar')
 navLines.style.display = "block";
 navX.style.display = "none";
   document.querySelector('#homePage').scrollIntoView(
@@ -168,7 +154,7 @@ navX.style.display = "none";
 });
 //scroll to about page on nav click
 document.querySelector('#about').addEventListener('click',function(){
-  navBar.style.display = 'none';
+  navBarSlide.classList.toggle('show-navBar')
 navLines.style.display = "block";
 navX.style.display = "none";
   document.querySelector('#aboutPage').scrollIntoView(
@@ -177,7 +163,7 @@ navX.style.display = "none";
 
 //scroll to portfolio page on nav click
 document.querySelector('#portfolio').addEventListener('click',function(){
-  navBar.style.display='none';
+  navBarSlide.classList.toggle('show-navBar')
      navLines.style.display="block";
      navX.style.display="none";
   document.querySelector('#portfolioPage').scrollIntoView(
@@ -185,7 +171,7 @@ document.querySelector('#portfolio').addEventListener('click',function(){
 });
 //scroll to services on nav click
 document.querySelector('#services').addEventListener('click',function(){
-  navBar.style.display = 'none';
+  navBarSlide.classList.toggle('show-navBar')
 navLines.style.display = "block";
 navX.style.display = "none";
   document.querySelector('#servicesPage').scrollIntoView(
@@ -193,7 +179,7 @@ navX.style.display = "none";
 });
 //scroll to contact page on nav click
 document.querySelector('#contact').addEventListener('click',function(){
-  navBar.style.display = 'none';
+  navBarSlide.classList.toggle('show-navBar')
 navLines.style.display = "block";
 navX.style.display = "none";
   document.querySelector('#contactPage').scrollIntoView(
