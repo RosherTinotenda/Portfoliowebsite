@@ -232,9 +232,8 @@ butn.style.color = 'black';
 const navToTop=document.querySelector('#navToTop')
 
 navToTop.addEventListener('click', (e)=>{
-    navBar.style.display = 'none';
+    
 navLines.style.display = "block";
-navX.style.display = "none";
   document.querySelector('#homePage').scrollIntoView(
     {behavior:'smooth'})
   
