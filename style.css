@@ -64,11 +64,13 @@ body {
   top:49%;
   left:1%;
 }
-.homeSociaMediaIcons>img{
+.homeSociaMediaIcons>svg{
   height:30px;
+  width:30px;
   padding-left:10%;
   position:relative;
   top:20%;
+  color:#656668;
 }
 .navOptions{
   height:50px;
@@ -139,39 +141,16 @@ body {
   border-radius:50%;
 }
 .navBar{
-  animation-name:hide;
-  animation-duration:1s;
-  animation-play-state:running;
-  animation-direction:normal;
-  display:none;
   height:100vh;
   width:220pt;
+  left:-220pt;
   background-color:white;
   position:fixed;
   z-index:5;
+  transition: left 0.5s ease-in-out;
 }
-@keyframes hide{
-  0%{
-    display:none;
-      background-color:white;
-  height:100vh;
-  width:0pt;
-  }
-  25%{
-    display:block;
-height:100vh;
-width:220pt;
-  }
-  50%{
-    display:none;
-height:100vh;
-width:220pt;
-  }
-  100%{
-    display:block;
-  height:100vh;
-  width:220pt;
-  }
+.show-navBar{
+ left:0;
 }
 .navBarPages{
   height:300pt;
@@ -282,9 +261,10 @@ left:5%;
   padding-top:9pt;
  margin-bottom:30pt;
 }
-.arrowImage{
+.arrowIconSvg{
   height:13pt;
   margin-right:3pt;
+  color:#0563BB;
 }
 #aboutPersonalInfo>div{
  display:flex;
@@ -370,12 +350,13 @@ left:5%;
   flex-direction:row;
   margin-top:23pt;
 }
-.contactCard img{
+.contactCard svg{
   height:50%;
   width:9%;
   position:relative;
   top:25%;
   left:0%;
+  color:#0563BB;
 }
 .contactCardTextHolder{
   height:100%;
@@ -518,3 +499,4 @@ left:5%;
   text-align:center;
   left:10%;
 }
+
